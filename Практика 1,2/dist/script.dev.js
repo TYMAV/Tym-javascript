@@ -19,9 +19,12 @@ var obj = {
   movies: {},
   actors: {},
   genres: [],
-  privat: false
+  privat: false,
+  
 };
-console.log(obj); // const a = prompt('Один из последних просторенніх фильмов', ''),
+console.log(obj); 
+
+// const a = prompt('Один из последних просторенніх фильмов', ''),
 //     b =  prompt('На сколько оцените его?', ''),
 //     c =  prompt('Один из последних просторенніх фильмов', ''),
 //     d =  prompt('На скоко оцените его?', '');
@@ -33,7 +36,7 @@ console.log(obj); // ПРАКТИКА 2
 function rememberMyFilms() {
   // 1
   for (var i = 0; i < 2; i++) {
-    var a = prompt('Один из последних просторенніх фильмов', ''),
+    var a = prompt('Один из последних просторенніх фильмов', '').trim(),
         b = prompt('На сколько оцените его?', ''); //  2       
 
     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
@@ -54,7 +57,7 @@ function detectPersonalLevel() {
   if (obj.count < 10) {
     console.log('Просмотрено довольно мало фильмов');
   } else if (obj.count >= 10 && obj.count <= 30) {
-    console, log('классический зритель!');
+    console.log('классический зритель!');
   } else if (obj.count > 30) {
     console.log('вы выноман мать твою');
   } else {

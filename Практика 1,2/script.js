@@ -46,7 +46,7 @@ console.log(obj);
 function rememberMyFilms() {
         // 1
     for(let i = 0; i < 2; i++) {
-            const a = prompt('Один из последних просторенніх фильмов', ''),
+            const a = prompt('Один из последних просторенніх фильмов', '').trim(),
               b = prompt('На сколько оцените его?', '');
             
 //  2       
@@ -70,7 +70,7 @@ rememberMyFilms();
         if (obj.count < 10) {
             console.log ('Просмотрено довольно мало фильмов');
         } else if (obj.count >= 10 && obj.count <= 30 ) {
-            console,log('классический зритель!');
+            console.log('классический зритель!');
         } else if  (obj.count > 30) {
             console.log ('вы выноман мать твою');
         } else {
